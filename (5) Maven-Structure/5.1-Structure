@@ -1,0 +1,49 @@
+# Folder Structure
+
+1) Looks for `src/main/java`
+  - Location of Java classes
+  - Where all java code is stored
+  - Beginning of our package declaration
+
+2) Creates a target directory
+  - Where everything gets compiled to
+  - Where unit tests get ran from
+  - Contents in this directory get packaged into a jar, war, ear, etc.
+
+3) Testing
+  - Simply have `src/test/java`
+  - Maven will test these (Unit tests only)
+
+# 4 Parts of a POM
+
+- Project Information
+  - groupId - Name of the company
+  - artifactId - Name of the application
+  - version - Version of the application
+  - packaging - How you want to distribute the application
+
+- Dependencies
+  - Artifacts you want to use inside the application
+
+- Build
+  - What plugins we want to use
+  - Directory structure (overriding default, resource location)
+
+- Repositories
+  - Where Dependencies exist (internal vs external)
+
+# What We Need for Dependencies
+
+  - groupId
+  - artifactId
+  - version
+
+```
+<dependencies>
+  <dependency>
+    <groupId></groupId>
+    <artifactId></artifactId>
+    <version></version>
+  </dependency>
+</dependencies>
+```
